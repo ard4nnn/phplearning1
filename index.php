@@ -38,4 +38,13 @@ else if ($nilai >=40)
 else
     echo "nilai anda adalah $nilai, anda mendapatkan nilai F (Tidak Lulus)";
 
+echo "<br><br>==============================<br><br>";
+
+//PERCABANGAN GANJIL GENAP
+$angka = 19;
+
+if ($angka % 2 == 0)
+    echo "angka $angka adalah bilangan genap";
+else
+    echo "angka $angka adalah bilangan ganjil";
 ?>
