@@ -1,12 +1,50 @@
 <?php
-echo "<br><br><a href='materi1.php'>Materi 1 : if dan else </a>";
-echo "<br><br><a href='materi2.php'>Materi 2 : looping </a>";
-echo "<br><br><a href='materi3.php'>Materi 3 :</a>";
-echo "<br><br><a href='materi4.php'>Materi 4 :</a>";
-echo "<br><br><a href='materi5.php'>Materi 5 :</a>";
-echo "<br><br><a href='materi6.php'>Materi 6 :</a>";
-echo "<br><br><a href='materi7.php'>Materi 7 :</a>";
-echo "<br><br><a href='materi8.php'>Materi 8 :</a>";
-echo "<br><br><a href='materi9.php'>Materi 9 :</a>";
-echo "<br><br><a href='materi10.php'>Materi 10 :</a>";
+$nama = "Evril";
+$umur = 20;
+$tinggi = 177.9;
+$menikah = false;
+$hobi = ["membaca novel dan manhwa","bermain game"];
+
+echo "nama saya $nama, umur saya $umur tahun, tinggi saya $tinggi cm, saya belum menikah, dan hobi saya adalah $hobi[0], dan $hobi[1]";
+
+echo "<br><br>==============================<br><br>";
+
+//OPERATOR
+$nilai1 = 5;
+$nilai2 = 8;
+$nilai3 = 10;
+$nilai4 = 20;
+$nilai5 = 13;
+
+$hasil = $nilai1 + $nilai2 - $nilai3 * $nilai4 /$nilai5;
+
+echo "hasil dari $nilai1 + $nilai2 - $nilai3 * $nilai4 /$nilai5 adalah $hasil";
+
+echo "<br><br>==============================<br><br>";
+
+//PERCABANGAN
+$nilai = 80;
+
+if ($nilai >= 80)
+    echo "nilai anda adalah $nilai, anda mendapatkan nilai A (Sangat Baik)";
+else if ($nilai >=70)
+    echo "nilai anda adalah $nilai, anda mendapatkan nilai B (Baik)";
+else if ($nilai >=60)
+    echo "nilai anda adalah $nilai, anda mendapatkan nilai C (Cukup";
+else if ($nilai >=50)
+    echo "nilai anda adalah $nilai, anda mendapatkan nilai D (Kurang)";
+else if ($nilai >=40)
+    echo "nilai anda andalah $nilai, anda mendapatkan nilai E (Hampir Tidak Lulus)";
+else
+    echo "nilai anda adalah $nilai, anda mendapatkan nilai F (Tidak Lulus)";
+
+echo "<br><br>==============================<br><br>";
+
+//PERCABANGAN GANJIL GENAP
+$angka = 19;
+
+if ($angka % 2 == 0)
+    echo "angka $angka adalah bilangan genap";
+else
+    echo "angka $angka adalah bilangan ganjil";
 ?>

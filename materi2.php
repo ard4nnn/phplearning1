@@ -6,8 +6,9 @@
 <?php
 if (isset($_POST['angka'])) {
     $angka = $_POST['angka'];
-    for ($i = 1; $i <= $angka; $i++) {
-        echo "ini angka ke $i <br>";
-    }
-   }
+   if ($angka % 2 == 0)
+    echo "Genap";
+else
+    echo "Ganjil";
+}
 ?>
