@@ -31,6 +31,15 @@ function bagi(int $a, int $b)
     $hasil = $a / $b;
     return $hasil;
 }
+function login(string $username, string $password)
+{
+    if ($username == "ardannn" && $password == "1234567") {
+        return true;
+    } else {
+        return false;
+    }
+}
+    
 ?>
 
 <?php
@@ -54,5 +63,29 @@ if (isset($_POST['angka'])) {
     echo "hasil dari ".$angka." * ".$angka2." adalah ".kali($angka,$angka2);
     echo "<br>";
     echo "hasil dari ".$angka." / ".$angka2." adalah ".bagi($angka,$angka2);
+}
+?>
+
+<?php
+echo"<br>===============================<br>";
+?>
+
+<form method="post">
+    <label for="">Username</label>
+    <input type="text" name="username">
+    <label for="">Password</label>
+    <input type="password" name="password">
+    <input type="submit" name="Kirim" value="Kirim">
+</form>
+
+<?php
+if (isset($_POST['username'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    if (login($username,$password)) {
+        echo "Login berhasil";
+    } else {
+        echo "Login gagal";
+    }
 }
 ?>
